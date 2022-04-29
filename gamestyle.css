@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+.world{
+border: 1px solid black;
+height: 100vh;
+width:75vw;
+background: skyblue;
+display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  overflow: auto;
+}
+.menu{
+border: 1px solid black;
+height: 100vh;
+width: 25vw;
+background:black
+}
+@media (max-width:768px){
+body{
+    flex-direction: column;
+}
+.world{
+    width: 100%;
+    height: 75vh;
+    
+}
+.menu{
+    width: 100%;
+    height: 25vh;
+}
+.units{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+}
+.units{
+    width: 100%;
+    height: 100%;
+}
+
+
+.sky{
+    background-color: skyblue
+}
+.stone{
+    background-image: url(./photos/stone.jpg);
+}
+.leaves{
+    background-image: url(./photos/leaves.jpg);
+}
+.wood{
+    background-image: url(./photos/wood.jpg);
+}
+.dirt{
+    background-image: url(./photos/dirt.jpg);
+}
+.grass{
+    background-image: url(./photos/grass.jpg);
+}
+.cloud{
+    background:white;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+ol{
+    list-style: none;
+    align-items: center;
+    color: white;
+   
+}
+ol li:hover{
+    background-color: blue;
+}
+.bank{
+    height: 30px;
+     width: 30px;
+     border: 1px solid white;
+}
+.bank{
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+        margin: 2rem;
+    }
+    ol li{
+    border: 2px solid white;
+    margin: 1rem;
+
+}
+@media (max-width: 768px) {
+    .menu{
+    display: flex;
+    flex-direction: row;
+    }
+    ul{
+        flex-direction: row;
+    }
+    ul li{ 
+        margin: 0rem;
+    }
+    ol li{
+        margin: 0;
+    }
+}
+
+div.units:hover{ 
+    border: 3px solid skyblue;
+}

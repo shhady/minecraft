@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./Minecraft-wall.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+button {
+    width: 50%;
+    align-self: center;
+    border-radius: 10px;
+    height: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+button:hover{
+    background-color: grey;
+}
+@media (min-width: 550px){
+    img{
+        height: 113px;
+        width: 400px;
+        align-self: center;
+    }
+    button{
+        width: 20%;
+    }
+}
+
+#myDIV{
+    color: #fff;
+    text-align: center;
+}
+
+.icon {
+position: fixed;
+color: #fff;
+animation: first_color .5s
+ease-in-out infinite alternate;
+top:75%;
+left: 20px;
+list-style: none;
+cursor: pointer;
+
+}
+li{
+   margin-top: 20px
+}
+
+@keyframes first_color{
+    0%{
+        text-shadow:  0 0 10px #ff1177,
+        0 0 10px #441134, 0 0 30px #285AEB;
+    }
+}

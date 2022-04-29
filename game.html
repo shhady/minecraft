@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamestyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="world">
+        </div>
+    </main>
+    <side>
+    <div  class="menu">
+        <ol>
+            <li><img id="i1" src="./pickaxe-removebg-preview.png" height="40px" width="60px" draggable="false" onmousedown="d=true;" onmouseup="d=false;">Pickaxe</li>
+            <li><img id="i2" src="./axe-removebg-preview.png" height="40px" width="60px" draggable="false"> Axe</li>
+            <li><img id="i3" src="./shovel-removebg-preview.png" height="40px" width="60px" draggable="false">Shovel</li>
+        </ol>
+        <!-- <div class="banks"> -->
+        <ul>
+            <li><div id="bankdirt" class="bank">
+            dirt</div></li>
+            <li><div id="bankwood" class="bank">
+            wood</div></li>
+            <li><div id="bankstone" class="bank">
+            stone</div></li>
+            <li><div id="bankleaves" class="bank">
+            leaves</div></li>
+        </ul>
+    <!-- </div> -->
+        <button id="restart-button">Restart Game</button>
+    </div>
+    </side>
+    <script src="app.js"></script>
+</body>
+</html>
